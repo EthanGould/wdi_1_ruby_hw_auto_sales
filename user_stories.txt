@@ -1,0 +1,7 @@
+1) Yearly Depreciation: For every year since the car was made, the cost of the car should be depreciated by $5,000 (from MSRP)
+
+2) Milage Reduction: For every 10,000 miles on the car, the cost of the car should be reduced by $500 (from MSRP)
+
+3) Damage Cost Reduction: For every damage the car has, the cost should be reduced by $1,000 (from MSRP)
+
+4) BONUS....
