@@ -1,6 +1,6 @@
 require_relative 'car.rb'
 require_relative 'used_car.rb'
-
+require_relative 'damage.rb'
 
 class Dealership
 
@@ -9,7 +9,7 @@ class Dealership
   def initialize(dealership_name)
     @name = dealership_name
     @new_cars = [Car.new('Ford', 'Taurus', '2014'), Car.new('Audi', 'A6', '2014'),Car.new('Subaru', 'Outback', '2014')]
-    @used_cars = [UsedCar.new('Toyota', 'Corolla', '2004')]
+    @used_cars = [UsedCar.new('Toyota', 'Corolla', '2004', Damage.new('dented fender', 375))]
   end
 
   def add_new_car(car)
