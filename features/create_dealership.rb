@@ -1,5 +1,10 @@
+require_relative '../lib/car.rb'
+require_relative '../lib/used_car.rb'
+
+require 'pry'
+
 require_relative '../lib/dealership.rb'
 
-new_dealership = Dealership.new("Ethans Car Lot")
+a = Dealership.new("Ethans Car Lot")
 
-puts new_dealership.name
+binding.pry
