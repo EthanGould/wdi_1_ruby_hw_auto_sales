@@ -2,17 +2,17 @@ require 'date'
 
 class Car
 
-  attr_accessor :make, :model, :year, :initial_price
+  attr_accessor :make, :model, :year, :msrp
 
-  def initialize(make, model, year)
+  def initialize(make, model, year, msrp)
     @make = make
     @model = model
     @year = year
-    @initial_price = 10000
+    @msrp = msrp
   end
 
   def current_value
-    @initial_price - (@initial_price * (0.01 * age))
+    @msrp - (@msrp * (0.01 * age))
   end
 
   def age

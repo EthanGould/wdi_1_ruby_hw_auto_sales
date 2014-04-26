@@ -1,6 +1,8 @@
 require_relative 'car.rb'
 require_relative 'used_car.rb'
 require_relative 'damage.rb'
+require 'pry'
+
 
 class Dealership
 
@@ -8,12 +10,16 @@ class Dealership
 
   def initialize(dealership_name)
     @name = dealership_name
-    @new_cars = [Car.new('Ford', 'Taurus', '2014'), Car.new('Audi', 'A6', '2014'),Car.new('Subaru', 'Outback', '2014')]
-    @used_cars = [UsedCar.new('Toyota', 'Corolla', '2004', Damage.new('dented fender', 375))]
+    @new_cars = [Car.new('Ford', 'Taurus', '2014', 27_000), Car.new('Audi', 'A6', '2014', 46_000),Car.new('Subaru', 'Outback', '2014', 32_000)]
+    @used_cars = [UsedCar.new('Toyota', 'Corolla', '2004', 12_000, Damage.new('dented fender', 375))]
   end
 
   def add_new_car(car)
-    @used_cars <<  car
+    @new_cars <<  car
+  end
+
+  def add_used_car(car)
+    @used_cars << car
   end
 
   def lot_value
@@ -33,3 +39,5 @@ class Dealership
   end
 
 end
+
+binding.pry
