@@ -2,9 +2,9 @@ require 'date'
 
 class Car
 
-  def self.car_id
-    @car_id += 1
-  end
+  # def self.car_id
+  #   @car_id += 1
+  # end
 
   attr_accessor :make, :model, :year, :msrp
 
@@ -13,7 +13,7 @@ class Car
     @model = model
     @year = year
     @msrp = msrp
-    @car_id = Car.car_id
+    # @car_id = Car.car_id
   end
 
   def current_value
