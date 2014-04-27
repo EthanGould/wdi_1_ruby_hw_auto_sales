@@ -10,7 +10,7 @@
 
 6) (DONE) Yearly Depreciation: For every year since the car was made, the cost of the car should be depreciated by 10%
 
-7) (DONE) Milage Reduction: For every 10,000 miles on the car, the cost of the car should be reduced by $500 (from MSRP)
+7) Milage Reduction: For every 10,000 miles on the car, the cost of the car should be reduced by $500 (from MSRP)
 
 8) (DONE) User can set a damage value on a used car of how much it would cost to fix the damage.
 

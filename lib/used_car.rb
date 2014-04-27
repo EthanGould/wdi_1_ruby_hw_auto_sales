@@ -16,9 +16,9 @@ class UsedCar < Car
       return super - damage.cost
     end
 
-    if milage
-      return super - (500 * milage/10_000)
-    end
+    # if milage
+    #   return super - (500 * milage/10_000)
+    # end
     super
   end
 end
