@@ -1,8 +1,6 @@
 require_relative 'car.rb'
 require_relative 'used_car.rb'
 require_relative 'damage.rb'
-require 'pry'
-
 
 class Dealership
 
@@ -40,4 +38,3 @@ class Dealership
 
 end
 
-binding.pry
